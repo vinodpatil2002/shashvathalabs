@@ -9,7 +9,10 @@ import {
     ChevronLeft,
     ChevronRight,
     Menu,
+    Phone,
     X,
+    Mail,
+    MapIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -464,22 +467,32 @@ export default function Home() {
                                     shashvata labs
                                 </span>
                             </div>
-                            <div className="flex gap-4 mt-4">
+                            <div className="flex text-center gap-4 mt-4">
                                 <Link
                                     href="#"
                                     className="text-gray-400 hover:text-white transition-colors duration-300"
                                 >
-                                    <div className="h-8 w-8 border border-gray-700 rounded-full flex items-center justify-center hover:border-purple-primary hover:bg-purple-primary/10 transition-all duration-300">
-                                        in
-                                    </div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-5 w-5"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                    </svg>
                                 </Link>
                                 <Link
-                                    href="#"
+                                    href="https://x.com/shashvatalabs"
                                     className="text-gray-400 hover:text-white transition-colors duration-300"
                                 >
-                                    <div className="h-8 w-8 border border-gray-700 rounded-full flex items-center justify-center hover:border-purple-primary hover:bg-purple-primary/10 transition-all duration-300">
-                                        x
-                                    </div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                        className="h-5 w-5"
+                                        fill="currentColor"
+                                    >
+                                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                    </svg>
                                 </Link>
                             </div>
                         </div>
@@ -568,13 +581,24 @@ export default function Home() {
                             <h3 className="font-medium mb-4 mt-8">Contact</h3>
                             <ul className="space-y-3 text-gray-400">
                                 <li className="hover:text-purple-primary transition-colors duration-200">
-                                    Email: contact@shashvatalabs.com
+                                    <div className="flex gap-2 text-center items-center">
+                                        <Mail className="h-5 w-5" />
+                                        <Link href="shashvatalabs@gmail.com">
+                                            shashvatalabs@gmail.com
+                                        </Link>
+                                    </div>
                                 </li>
                                 <li className="hover:text-purple-primary transition-colors duration-200">
-                                    Phone: +1 (XXX) XXXX XXX
+                                    <div className="flex gap-2 text-center items-center">
+                                        <Phone />
+                                        +91 8310098901
+                                    </div>
                                 </li>
                                 <li className="hover:text-purple-primary transition-colors duration-200">
-                                    Location: [City, Country]
+                                    <div className="flex items-center text-center gap-2">
+                                        <MapIcon />
+                                        India
+                                    </div>
                                 </li>
                             </ul>
                         </div>
