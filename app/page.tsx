@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -78,7 +79,7 @@ export default function Home() {
     };
 
     return (
-        <main className="min-h-screen bg-black font-poppins text-white overflow-hidden">
+        <main className="font-poppins min-h-screen bg-black text-white overflow-hidden">
             {/* Background pattern with parallax effect */}
             <div className="fixed inset-0 z-0 opacity-20">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-transparent"></div>
@@ -268,7 +269,7 @@ export default function Home() {
                         transition={{ duration: 0.6, delay: 0.6 }}
                     >
                         <button
-                            className={`font-archivo mt-10 bg-[linear-gradient(80.72deg,#714DFF_0%,#9C83FF_31.28%,#E151FF_77.97%,#FFF759_95.64%)] text-white px-6 py-3 rounded-md  text-[20px] leading-[24px] tracking-[0%] transition-all duration-300 hover:shadow-[0_0_20px_rgba(147,130,255,0.6)] hover:scale-105 active:scale-95 font-semibold`}
+                            className={` mt-10 bg-[linear-gradient(80.72deg,#714DFF_0%,#9C83FF_31.28%,#E151FF_77.97%,#FFF759_95.64%)] text-white px-6 py-3 rounded-md  text-[20px] leading-[24px] tracking-[0%] transition-all duration-300 hover:shadow-[0_0_20px_rgba(147,130,255,0.6)] hover:scale-105 active:scale-95 font-semibold`}
                         >
                             Explore Our Products
                         </button>
@@ -464,14 +465,6 @@ export default function Home() {
                                 </span>
                             </div>
                             <div className="flex gap-4 mt-4">
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                                >
-                                    <div className="h-8 w-8 border border-gray-700 rounded-full flex items-center justify-center hover:border-purple-primary hover:bg-purple-primary/10 transition-all duration-300">
-                                        f
-                                    </div>
-                                </Link>
                                 <Link
                                     href="#"
                                     className="text-gray-400 hover:text-white transition-colors duration-300"

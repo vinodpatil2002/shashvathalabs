@@ -20,10 +20,8 @@ const config = {
         },
         extend: {
             fontFamily: {
-                sans: ["var(--font-poppins)", "sans-serif"], // Use Poppins globally
+                sans: ["var(--font-geist-sans)"],
                 mono: ["var(--font-geist-mono)"],
-                archivo: ["var(--font-archivo)", "sans-serif"], // Add Archivo
-                poppins: ["var(--font-poppins)", "sans-serif"], // Add Poppins
             },
             colors: {
                 border: "hsl(var(--border))",
@@ -49,6 +47,34 @@ const config = {
                 "dark-3": "#1f1f1f",
                 "dark-4": "#1e1e1e",
                 "accent-green": "#44e760",
+                primary: {
+                    DEFAULT: "hsl(var(--primary))",
+                    foreground: "hsl(var(--primary-foreground))",
+                },
+                secondary: {
+                    DEFAULT: "hsl(var(--secondary))",
+                    foreground: "hsl(var(--secondary-foreground))",
+                },
+                destructive: {
+                    DEFAULT: "hsl(var(--destructive))",
+                    foreground: "hsl(var(--destructive-foreground))",
+                },
+                muted: {
+                    DEFAULT: "hsl(var(--muted))",
+                    foreground: "hsl(var(--muted-foreground))",
+                },
+                accent: {
+                    DEFAULT: "hsl(var(--accent))",
+                    foreground: "hsl(var(--accent-foreground))",
+                },
+                popover: {
+                    DEFAULT: "hsl(var(--popover))",
+                    foreground: "hsl(var(--popover-foreground))",
+                },
+                card: {
+                    DEFAULT: "hsl(var(--card))",
+                    foreground: "hsl(var(--card-foreground))",
+                },
             },
             borderRadius: {
                 lg: "var(--radius)",
