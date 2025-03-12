@@ -16,6 +16,12 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import graph from "@/app/graph.png";
+import stars from "@/app/starss.svg";
+import logo from "@/app/logo.svg";
+import img1 from "@/app/img1.png";
+import img2 from "@/app/img2.png";
+import img3 from "@/app/img3.png";
 
 export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -110,16 +116,12 @@ export default function Home() {
                             transition={{ duration: 0.6 }}
                             className="text-purple-primary"
                         >
-                            <Star className="h-5 w-5 fill-purple-primary" />
+                            <Image
+                                src={logo}
+                                alt="Shashvata Labs"
+                                draggable={false}
+                            />
                         </motion.div>
-                        <motion.span
-                            initial={{ x: -20, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.6, delay: 0.1 }}
-                            className="font-medium"
-                        >
-                            Shashvata Labs
-                        </motion.span>
                     </div>
 
                     {/* Center - Navigation Links */}
@@ -238,7 +240,7 @@ export default function Home() {
                         transition={{ duration: 1, delay: 0.8 }}
                         className="absolute top-20 left-[20%]"
                     >
-                        <Star className="h-6 w-6 text-white" />
+                        <Image src={stars} alt="Stars" width={50} height={50} />
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -246,7 +248,7 @@ export default function Home() {
                         transition={{ duration: 1, delay: 1.2 }}
                         className="absolute bottom-40 left-[10%]"
                     >
-                        <Star className="h-8 w-8 text-white" />
+                        <Image src={stars} alt="Stars" width={50} height={50} />
                     </motion.div>
                 </div>
 
@@ -352,11 +354,12 @@ export default function Home() {
                         className="rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,130,255,0.2)]"
                     >
                         <Image
-                            src="/placeholder.svg?height=600&width=400"
+                            src={img1}
                             alt="E-commerce app"
-                            width={400}
-                            height={600}
-                            className="w-full h-auto"
+                            width={442}
+                            height={526}
+                            quality={100}
+                            className="absolute top-[1396.67px] left-[113px] rounded-[24px] w-[442px] h-[526px] object-cover"
                         />
                     </motion.div>
                     <motion.div
@@ -364,11 +367,12 @@ export default function Home() {
                         className="rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,130,255,0.2)]"
                     >
                         <Image
-                            src="/placeholder.svg?height=600&width=400"
+                            src={img2}
                             alt="Entertainment app"
-                            width={400}
-                            height={600}
-                            className="w-full h-auto"
+                            width={442}
+                            height={526}
+                            quality={100}
+                            className="absolute top-[1396.67px] left-[113px] rounded-[24px] w-[442px] h-[526px] object-cover"
                         />
                     </motion.div>
                     <motion.div
@@ -376,11 +380,12 @@ export default function Home() {
                         className="rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,130,255,0.2)]"
                     >
                         <Image
-                            src="/placeholder.svg?height=600&width=400"
+                            src={img3}
                             alt="Social app"
-                            width={400}
-                            height={600}
-                            className="w-full h-auto"
+                            width={442}
+                            height={526}
+                            quality={100}
+                            className="absolute top-[1396.67px] left-[113px] rounded-[24px] w-[442px] h-[526px] object-cover"
                         />
                     </motion.div>
                 </motion.div>
@@ -444,7 +449,7 @@ export default function Home() {
                     >
                         <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-primary to-[#44e760] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
                         <Image
-                            src="/placeholder.svg?height=400&width=600"
+                            src={graph}
                             alt="Analytics dashboard"
                             width={600}
                             height={400}
