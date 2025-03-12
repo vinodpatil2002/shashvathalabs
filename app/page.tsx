@@ -144,7 +144,7 @@ export default function Home() {
                             transition={{ duration: 0.4, delay: 0.3 }}
                         >
                             <Link
-                                href="#"
+                                href="/coming-soon"
                                 className="hover:text-purple-primary transition-colors duration-200"
                             >
                                 Products
@@ -171,7 +171,7 @@ export default function Home() {
                         transition={{ duration: 0.4, delay: 0.5 }}
                     >
                         <button className="bg-purple-primary broder hover:bg-purple-secondary flex gap-2 items-center text-white px-4 py-2 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(147,130,255,0.5)] active:scale-95">
-                            Contact
+                            Book a Demo
                             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </button>
                     </motion.div>
@@ -206,7 +206,7 @@ export default function Home() {
                                 Home
                             </Link>
                             <Link
-                                href="#"
+                                href="/coming-soon"
                                 className="py-2 hover:text-purple-primary transition-colors duration-200"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
@@ -359,7 +359,7 @@ export default function Home() {
                             width={442}
                             height={526}
                             quality={100}
-                            className="absolute top-[1396.67px] left-[113px] rounded-[24px] w-[442px] h-[526px] object-cover"
+                            className="w-full h-full object-cover rounded-[24px]"
                         />
                     </motion.div>
                     <motion.div
@@ -372,7 +372,7 @@ export default function Home() {
                             width={442}
                             height={526}
                             quality={100}
-                            className="absolute top-[1396.67px] left-[113px] rounded-[24px] w-[442px] h-[526px] object-cover"
+                            className="w-full h-full object-cover rounded-[24px]"
                         />
                     </motion.div>
                     <motion.div
@@ -385,7 +385,7 @@ export default function Home() {
                             width={442}
                             height={526}
                             quality={100}
-                            className="absolute top-[1396.67px] left-[113px] rounded-[24px] w-[442px] h-[526px] object-cover"
+                            className="w-full h-full object-cover rounded-[24px]"
                         />
                     </motion.div>
                 </motion.div>
@@ -398,7 +398,7 @@ export default function Home() {
                     className="flex flex-col md:flex-row justify-between items-center mt-10 gap-4"
                 >
                     <Link
-                        href="#"
+                        href="/coming-soon"
                         className="text-purple-primary flex items-center gap-2 hover:underline group"
                     >
                         Browse thousands more
@@ -465,12 +465,11 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
                         <div className="lg:col-span-2">
                             <div className="flex items-center gap-2 mb-4">
-                                <div className="text-purple-primary">
-                                    <Star className="h-5 w-5 fill-purple-primary" />
-                                </div>
-                                <span className="font-medium">
-                                    shashvata labs
-                                </span>
+                                <Image
+                                    src={logo}
+                                    alt="Shashvata Labs"
+                                    draggable={false}
+                                />
                             </div>
                             <div className="flex text-center gap-4 mt-4">
                                 <Link
@@ -515,7 +514,7 @@ export default function Home() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="/coming-soon"
                                         className="hover:text-white transition-colors duration-200 hover:text-purple-primary"
                                     >
                                         Careers
@@ -537,7 +536,7 @@ export default function Home() {
                             <ul className="space-y-3 text-gray-400">
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="/coming-soon"
                                         className="hover:text-white transition-colors duration-200 hover:text-purple-primary"
                                     >
                                         Blog
@@ -545,7 +544,7 @@ export default function Home() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="/coming-soon"
                                         className="hover:text-white transition-colors duration-200 hover:text-purple-primary"
                                     >
                                         Help Center
@@ -553,7 +552,7 @@ export default function Home() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href="/coming-soon"
                                         className="hover:text-white transition-colors duration-200 hover:text-purple-primary"
                                     >
                                         Contact Support
