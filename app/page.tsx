@@ -325,7 +325,7 @@ export default function Home() {
                         initial="hidden"
                         animate={descInView ? "visible" : "hidden"}
                         transition={{ delay: 0.4 }}
-                        classNameclassName="text-sm sm:text-base text-gray-400"
+                        className="text-sm sm:text-base text-gray-400"
                     >
                         At Shashvata labs, we create innovative, scalable, and
                         future-ready digital products that redefine industries.
